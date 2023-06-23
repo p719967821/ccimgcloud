@@ -7,21 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ccimgcloud-datasource" />
         <module name="ccimgcloud-generator" />
-        <module name="ccimgcloud-api-platform" />
-        <module name="ccimgcloud-common" />
         <module name="ccimgcloud-manage" />
-        <module name="ccimgcloud-auth" />
-        <module name="ccimgcloud-admin" />
-        <module name="ccimgcloud-utils" />
-        <module name="ccimgcloud-recommend" />
-        <module name="ccimgcloud-api-search" />
-        <module name="ccimgcloud-api-auth" />
         <module name="ccimgcloud-platform" />
+        <module name="ccimgcloud-datasource" />
+        <module name="ccimgcloud-admin" />
         <module name="ccimgcloud-api-admin" />
         <module name="ccimgcloud-gateway" />
+        <module name="ccimgcloud-auth" />
+        <module name="ccimgcloud-recommend" />
+        <module name="ccimgcloud-api-search" />
+        <module name="ccimgcloud-utils" />
         <module name="ccimgcloud-search" />
+        <module name="ccimgcloud-api-auth" />
+        <module name="ccimgcloud-api-platform" />
+        <module name="ccimgcloud-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,9 +31,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ccimgcloud" options="-parameters" />
+      <module name="ccimgcloud" options="" />
       <module name="ccimgcloud-admin" options="-parameters" />
-      <module name="ccimgcloud-api" options="-parameters" />
+      <module name="ccimgcloud-api" options="" />
       <module name="ccimgcloud-api-admin" options="-parameters" />
       <module name="ccimgcloud-api-auth" options="-parameters" />
       <module name="ccimgcloud-api-platform" options="-parameters" />

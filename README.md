@@ -111,33 +111,33 @@
 
 ### 后端技术
 
-|      技术      |           版本           |      
-| :------------: | :-----------------------: 
-|   SpringBoot   |         2.3.2.RELEASE      |  
-|  SpringCloudAlibaba	   |        Hoxton.SR6    |   
-| Shiro |      1.10.0       |  
-|  MyBatis-Plus  |              -        |          
-| Elasticsearch  |         7.16.3       |   
-|     Redis      |        4.2.2         |  
-|     Druid      |              |  
-|     oss对象存储     |     -     |            
-|      JWT       |        0.7.0        |                
+|      技术      |           版本           |
+| :------------: | :-----------------------: |
+|   SpringBoot   |         2.3.2.RELEASE      |
+|  SpringCloudAlibaba	   |        Hoxton.SR6    |
+| Shiro |      1.10.0       |
+|  MyBatis-Plus  |              -        |
+| Elasticsearch  |         7.16.3       |
+|     Redis      |        4.2.2         |
+|     Druid      |              |
+|     oss对象存储     |     -     |
+|      JWT       |        0.7.0        |
 |     Lombok     |     -      |
-|     Nginx      |  1.12.2  |         
-|     Hutool     |      -       |               
-|   websocket    |     2.3.2.RELEASE      |   
+|     Nginx      |  1.12.2  |
+|     Hutool     |      -       |
+|   websocket    |     2.3.2.RELEASE      |
 
 ### 前端技术
 
-|      技术      |           版本           |      
-| :------------: | :-----------------------: 
-|   nodejs	   |         12.14.0（最好一致）    |  
-|  vue		   |    -     |   
-| Shiro |        -    |  
-|  uniapp	  |              -        |          
-| vueX	  |        -      |   
-|     axios	      |      -       |  
-|     其他组件      |    -          |  
+|      技术      |           版本           |
+| :------------: | :-----------------------: |
+|   nodejs	   |         12.14.0（最好一致）    |
+|  vue		   |    -     |
+| Shiro |        -    |
+|  uniapp	  |              -        |
+| vueX	  |        -      |
+|     axios	      |      -       |
+|     其他组件      |    -          |
 
 
 

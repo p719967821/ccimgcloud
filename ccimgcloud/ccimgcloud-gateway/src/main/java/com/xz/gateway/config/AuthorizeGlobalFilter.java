@@ -62,12 +62,12 @@ public class AuthorizeGlobalFilter implements GlobalFilter, Ordered {
         PathMatcher pathMatcher = new AntPathMatcher();
         for (String authIgnoreTemp : whiteUrlList) {
             if (!StringUtils.isEmpty(authIgnoreTemp) && pathMatcher.match(authIgnoreTemp, reqPath)) {
-                AuthorizeGlobalFilter.log.info("MyAuthorizeGlobalFilter 全局认证过滤器 ---- 地址无需登陆" + reqPath);
+//                AuthorizeGlobalFilter.log.info("MyAuthorizeGlobalFilter 全局认证过滤器 ---- 地址无需登陆" + reqPath);
                 return chain.filter(exchange);
             }
         }
-        AuthorizeGlobalFilter.log.info("MyAuthorizeGlobalFilter 全局认证过滤器 ---- 地址需要登陆" + reqPath);
-        AuthorizeGlobalFilter.log.info("请求头信息" + serverHttpRequest.getHeaders());
+//        AuthorizeGlobalFilter.log.info("MyAuthorizeGlobalFilter 全局认证过滤器 ---- 地址需要登陆" + reqPath);
+//        AuthorizeGlobalFilter.log.info("请求头信息" + serverHttpRequest.getHeaders());
 
         String token = serverHttpRequest.getHeaders().getFirst("Jwt_token");
 
@@ -76,14 +76,14 @@ public class AuthorizeGlobalFilter implements GlobalFilter, Ordered {
             // 拦截，提示未授权错误，401
             //serverHttpResponse.setStatusCode(HttpStatus.UNAUTHORIZED);
             // 拦截结束请求
-            AuthorizeGlobalFilter.log.error("TOKEN缺失");
+//            AuthorizeGlobalFilter.log.error("TOKEN缺失");
             return serverHttpResponse.setComplete();
         }
 
 
         if (!JwtUtils.checkToken(token)) {
             serverHttpResponse.setStatusCode(HttpStatus.UNAUTHORIZED);
-            AuthorizeGlobalFilter.log.error("TOKEN失效");
+//            AuthorizeGlobalFilter.log.error("TOKEN失效");
             return serverHttpResponse.setComplete();
         }
 
@@ -95,7 +95,7 @@ public class AuthorizeGlobalFilter implements GlobalFilter, Ordered {
             String curUser = redisUtils.get(key);
 
             if (StringUtils.isEmpty(curUser)) {
-                AuthorizeGlobalFilter.log.info("当前用户已退出登录");
+//                AuthorizeGlobalFilter.log.info("当前用户已退出登录");
                 return serverHttpResponse.setComplete();
             } else {
                 return chain.filter(exchange);

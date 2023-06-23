@@ -44,8 +44,8 @@ spring:
       enabled: true
   redis:
     database: 0
-    host: localhost
-    port: 6379
+    host: 124.71.46.117
+    port: 6378
     password:    # 密码（默认为空）
     timeout: 6000ms  # 连接超时时长（毫秒）
     jedis:
